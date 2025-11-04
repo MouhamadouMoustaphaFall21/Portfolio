@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mon portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+      <header>
+        <div class="logo">
+            <h1>Mouha_<span>Dev</span> &lt;/&gt;</h1>
+        </div>
+         <input type="checkbox" id="check">
+             <label for="check" class="checkbtn">
+             <i class="fas fa-bars" id="btn"></i> 
+             <i class="fas fa-times" id="cancel"></i>  
+             </label>
+        <div class="menu">
+           <nav>         
+                <ul>
+                   <li><a href="#Accueil">Accueil</a></li>
+                   <li><a href="#a-propos">À propos</a></li>
+                   <li><a href="#Compétences">Compétences</a></li>
+                   <li><a href="#Projets">Projets </a></li>
+                   <li><a href="#Contact">Contact</a></li>
+               </ul>
+           </nav>
+        </div>
+      </header>
+      <section id="Accueil" class="section">
+          <div class="droite">
+            <img src="img/pp.jpeg" alt="Ma photo" class="photo">
+         </div>
+         <div class="gauche">
+            <h1>Salut, moi c'est Mouhamadou Moustapha FALL<br><span id="passion"></span></h1>
+              <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+         <script>
+    var typed = new Typed('#passion', {
+      strings: ["Étudiant passionné d'informatique.","Amateur de lignes de code.","Développeur Web Junior."],
+      typeSpeed: 50, 
+      backSpeed: 70,      
+      backDelay: 1500, 
+      loop: true   
+    });
+  </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const check = document.getElementById('check');
+    const menuLinks = document.querySelectorAll('.menu nav a');
+    
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                check.checked = false;
+            }
+        });
+    });
+});
+</script>
+            <p>
+                Je m'appelle Mouhamadou Moustapha Fall, étudiant en informatique.
+              </p>
+              <p>
+              Passionné par les lignes de code, je trouve une véritable joie à résoudre des problèmes et à créer des solutions innovantes grâce à la programmation. Chaque ligne de code est pour moi une opportunité d'apprendre, de grandir et de repousser les limites de ce qui est possible.
+              </p>
+              <p>
+              Que ce soit en développant des algorithmes, en créant des sites web ou en explorant de nouvelles technologies, je suis toujours à la recherche de défis stimulants. Le monde de l'informatique est un terrain de jeu infini, et j'adore en explorer chaque recoin.
+              </p>
+            <div class="infos-perso">
+                <a href="https://majestic-moonbeam-876f75.netlify.app/" class="btn" target="_blank"><i class="fas fa-download"></i> Voir mon CV</a>
+                <div class="reseaux">
+                 <a class= "ig" href="https://www.instagram.com/ahmada__21?igsh=ZXkzcG83am53amhj&utm_source=qr" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+                 <a class= "link" href="https://www.linkedin.com/in/mouhamadou-m-fall-98a19a353" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                 <a class= "git" href="https://github.com/MouhamadouMoustaphaFall21?tab=stars" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+         </div>
+      </section>
+      <section id="a-propos" class="section2">
+    <h2>À propos de moi</h2>
+    <div class="container-apropos">
+        <div class="texte-apropos">
+            <p>Après l'obtention de mon baccalauréat, confronté au choix crucial de mes études supérieures, plusieurs domaines ont captivé mon attention. Grâce à un encadrement précieux, j'ai opté pour la filière qui me correspondait le mieux : l'informatique. Dès mes premiers pas dans ce monde, une passion est née, et cette motivation n'a fait que grandir depuis.</p>
+            <p>Mon ambition est de devenir un <strong>développeur full-stack</strong> accompli, capable de naviguer avec aisance entre le front-end et le back-end pour concevoir des applications complètes, performantes et intuitives. Je souhaite créer des solutions technologiques qui répondent à des besoins concrets, tout en perfectionnant continuellement mes compétences techniques et humaines.</p>
+            <p>À long terme, j'aspire à contribuer activement au développement numérique du Sénégal, en mettant en place des outils accessibles et innovants. Mon rêve ? Inspirer une nouvelle génération à se lancer dans l'aventure du code, tout en laissant une empreinte positive grâce à la technologie.</p>
+            <p>Le monde de l'informatique est un terrain infini de défis et d'opportunités, et je compte bien en explorer chaque possibilité !</p>
+        </div>
+        <div class="image-apropos">
+            <img class="code" src="img/code.jpeg" alt="Coding">
+        </div>
+    </div>
+</section>
+<section id="Compétences" class="Competences section2">
+  <h3>Mes Compétences</h3>
+  <div class="grille">
+    <div class="case">
+      <i class="fab fa-html5" style="color: #e34f26; font-size:5rem;"></i>
+      <h1>HTML5</h1>
+      <div class="niveau"><div style="width:85%;"></div></div>
+    </div>
+    <div class="case">
+      <i class="fab fa-css3-alt" style="color: #0870e7; font-size:5rem;"></i>
+      <h1>CSS3</h1>
+      <div class="niveau"><div style="width:72%;"></div></div>
+    </div>
+    <div class="case">
+      <i class="fab fa-js-square" style="color:#f7df1e; font-size:5rem;"></i>
+      <h1>JavaScript</h1>
+      <div class="niveau"><div style="width:55%;"></div></div>
+    </div>
+    <div class="case">
+      <i class="fa-solid fa-c" style="color: #375af3; font-size:5rem;"></i>
+      <h1>Langage C</h1>
+      <div class="niveau"><div style="width:65%;"></div></div>
+    </div>
+     <div class="case">
+      <i class="fas fa-database" style="color:#00758f; font-size:5rem;"></i>
+      <h1>SQL</h1>
+      <div class="niveau"><div style="width:40%;"></div></div>
+    </div>
+    <div class="case">
+      <i class="fab fa-git-alt" style="color:#F05032; font-size:5rem;"></i>
+      <h1>Git</h1>
+      <div class="niveau"><div style="width:35%;"></div></div>
+    </div>
+    <div class="case">
+      <i class="fab fa-github" style="color:#181717; font-size:5rem;"></i>
+      <h1>Github</h1>
+      <div class="niveau"><div style="width:35%;"></div></div>
+    </div>
+    <div class="case">
+      <i class="fab fa-figma" style="color: #F24E1E; font-size:5rem;"></i>
+      <h1>Figma(Notion)</h1>
+      <div class="niveau"><div style="width:30%;"></div></div>
+    </div>
+    <div class="case">
+      <i class="fab fa-canva" style="color: #20c997; font-size:5rem;"></i>
+      <h1>Canva</h1>
+      <div class="niveau"><div style="width:65%;"></div></div>
+    </div>
+  </div>
+</section>
+ <section id="Projets" class="section2">
+            <h4>Mes Projets</h4>
+            <div class="grille-projets">
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet22.png" alt="Projet Bibliothèque">
+                    </div>
+                    <div class="contenu-projet">
+                        <h1>Notre Bibliothèque universitaire</h1>
+                        <p><strong>Application web conçue avec les services cloud de Google (Google Workspace).</strong></p>
+                        <p>Application web de gestion des prêts dans une bibliothèque universitaire.</p>
+                        <a href="https://sites.google.com/univ-thies.sn/bibliotheque-universitaire?usp=sharing" class="lien-projet">Consulter le site</a>
+                    </div>
+                </div>
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet1.png" alt="Ndiaye_business">
+                    </div>
+                    <div class="contenu-projet">
+                        <h1>Site de vente de smartphones en ligne</h1>
+                        <p> <strong>Site Web simple mais responsive</strong></p>
+                        <p>Un site web simple et responsive développé pour un ami afin de booster ses ventes en ligne.</p>
+                        <a href="https://mouhamadoumoustaphafall21.github.io/Ndiaye_business/" class="lien-projet">Consulter le site </a>
+                    </div>
+                </div>
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet3.png" alt="Projet Site ecole">
+                    </div>
+                    <div class="contenu-projet">
+                        <h1>Projet de gestion d’établissement universitaire</h1>
+                        <p><strong>Application Web</strong></p>
+                        <p>Un projet qui me tient à cœur : j’ai commencé le front-end, mais il nécessite un back-end que je compte développer avec le temps.</p>
+                        <a href="#" class="lien-projet">Consulter le site</a>
+                    </div>
+                </div>
+                <div class="carte-projet">
+                    <div class="image-projet">
+                        <img src="img/projet2.png" alt="IT DAY EPT">
+                    </div>
+                    <div class="contenu-projet">
+                        <h1>IT  Days</h1>
+                        <p><strong>Site Web-Reproduction du site officiel</strong></p>
+                        <p>Reproduction du site officiel de l’événement pour pratiquer mes débuts en HTML et CSS.</p>
+                        <a href="#" class="lien-projet">Consulter le site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+</section>
+<section id="Contact" class="contact">
+    <div class="contact-info">
+      <h5>Me Contacter</h5>
+          <p class="contact-message">
+            Alors, vous souhaitez une collaboration ou explorer de nouvelles opportunités ? 
+            Je suis à votre disposition ! N'hésitez pas à me contacter.
+          </p>
+       <form action="" method="post"> 
+          <fieldset>
+            <div class="formulaire">
+              <label for="nom">Prenom </label>
+              <input id="prenom" name="prenom" required placeholder="Entrer votre prenom " maxlength="30" >
+            </div>
+            <div class="formulaire">
+              <label for="nom">Nom </label>
+              <input id="nom" name="nom" required placeholder="Entrer votre nom " maxlength="15" >
+            </div>
+            <div class="formulaire">
+              <label for="email">Email</label>
+              <input id="email" name="email" required placeholder="Entrer votre adresse email" >
+            </div>
+            <div class="formulaire">
+              <label for="message">Message complémentaire:</label>
+              <textarea id="message" nom="message" rows="3" required placeholder="message"></textarea>
+            </div>
+               <div class="formulaire">
+            <button type="submit" class="btn-envoyer">Envoyer le message</button>
+        </div>
+          </fieldset>
+        </form>
+        <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+  e.preventDefault(); 
+  const prenom = document.getElementById("prenom").value.trim();
+  const nom = document.getElementById("nom").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+  if (!prenom || !nom || !email || !message) {
+    alert(" Veuillez remplir tous les champs.");
+    return;
+  }
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert(" Veuillez entrer une adresse email valide.");
+    return;
+  }
+  alert(" Formulaire valide ! Le message peut être envoyé.");
+  this.submit(); 
+});
+</script>
+
+        <h1>Mes Coordonnées</h1>
+        <p><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</p>
+        <p><i class="fas fa-envelope"></i> famet535@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +221 76 742 21 24</p>
+        
+        <h1>Suivez-moi aussi sur :</h1>
+        <div class="reseaux-contact">
+            <a href="https://github.com/MouhamadouMoustaphaFall21?tab=stars" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mouhamadou-m-fall-98a19a353" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/ahmada__21?igsh=ZXkzcG83am53amhj&utm_source=qr" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Mouhamadou Moustapha Fall. Tous droits réservés.</p>
+</footer>
